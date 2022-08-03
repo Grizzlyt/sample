@@ -64,3 +64,10 @@ variable "redis_engine_version" {
 variable "redis_family" {
   default = "redis6.x"
 }
+
+
+variable "eks_cluster_domain" {
+  type        = string
+  description = "Route53 domain for the cluster. Must be manually created"
+  default     = "app.com"
+}

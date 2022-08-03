@@ -1,0 +1,10 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: sample-app-service
+spec:
+  selector:
+    app: sample
+  ports:
+    - port: 5678 # Default port for hashicorp image
